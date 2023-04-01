@@ -1,0 +1,143 @@
+<!--Authors: Abrahim and Max-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="about_style.css">
+  <title>About Us</title>
+</head>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f5f5f5;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.blurb-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .blurb {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+img {
+	display: block;
+	margin: 0 auto 20px;
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+/* Navbar style */
+.navbar {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    pointer-events: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.nav-link {
+    color: #333;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Active link */
+.active {
+    color: #007bff;
+    font-weight: bold;
+}
+</style>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Raspberry Pi Webserver</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="countries.html">Countries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">About Our Project</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <h1>About Us</h1>
+  <div class="blurb-container">
+    <div class="blurb">
+      <img src="{{ url_for('static', filename='abrahim.jpg') }}" alt="Abrahim">
+      
+      <h2>Abrahim Toutoungi</h2>
+      <p>Hello, my name is Abrahim and I'm a sophomore studying software engineering. I have a passion for
+        problem-solving and enjoy tackling challenging puzzles like Rubik's cubes and chess. When I'm not busy with work
+        or studying, you can often find me practicing my chess strategies or solving Rubik's cubes.</p>
+    </div>
+    <div class="blurb">
+      <img src="{{ url_for('static', filename='max.jpg') }}" alt="Max">
+      <h2>Max Mayer-Mader</h2>
+      <p>Hello, my name is Max and I am currently a sophomore studying computer science. I have always had a strong
+        passion for coding and developing websites, and I am continuously trying to improve my skills
+        in this field. Whenever I have some free time, I like to unwind by practicing my skills on
+        a skateboard or hanging out with friends.</p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

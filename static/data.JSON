@@ -1,0 +1,42 @@
+[
+  {
+    "name": "USA",
+    "temperature": 12,
+    "humidity": 65
+  },
+  {
+    "name": "Canada",
+    "temperature": 7,
+    "humidity": 60
+  },
+  {
+    "name": "Mexico",
+    "temperature": 25,
+    "humidity": 70
+  },
+  {
+    "name": "Greece",
+    "temperature": 17.5,
+    "humidity": 55
+  },
+  {
+    "name": "Ghana",
+    "temperature": 30,
+    "humidity": 85
+  },
+  {
+    "name": "Lebanon",
+    "temperature": 15,
+    "humidity": 70
+  },
+  {
+    "name": "Mauritius",
+    "temperature": 22,
+    "humidity": 81
+  },
+  {
+    "name": "Brazil",
+    "temperature": 30,
+    "humidity": 78
+  }
+]

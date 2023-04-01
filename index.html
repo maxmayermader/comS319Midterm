@@ -1,0 +1,108 @@
+<!--Authors: Abrahim and Max-->
+
+<!DOCTYPE html>
+
+<head>
+  <title>Raspberry Pi Webserver</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link href="index_style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 33%;
+    padding: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+  }
+
+/* Navbar style */
+.navbar {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    pointer-events: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.nav-link {
+    color: #333;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Active link */
+.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+</style>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Raspberry Pi Webserver</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="countries.html">Countries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">About Our Project</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+
+  <h1>Abrahim and Max's Raspberry Pi Webserver</h1>
+  <br>
+  <br>
+  <h2 align="center"> Click below to get Temperature & Humidity data from the DHT 11 sensor</h2>
+  <p align="center"><button><a href="/dhtpin/get" style="color: teal;" target="_blank"> Click Here </a></button></p>
+
+</body>
+
+</html>
